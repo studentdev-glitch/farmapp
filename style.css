@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
@@ -9,99 +8,230 @@
 
 body {
     font-family: "Roboto", sans-serif;
+    height: auto;
+}
+
+.header-form {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 500px;
+}
+
+.header-form input[type="email"] {
+    flex: 1;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+.header-form button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 header {
-    /* linear-gradient(rgba(246, 3, 3, 0.383), rgba(195, 102, 48, 0.589)), */
-    background: linear-gradient(rgba(24, 22, 22, 0.383), rgba(204, 104, 86, 0.589)),url("./images/bg.jpg");
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)),
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
+        url("./images/bg.jpg");
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
     height: 100vh;
-    padding: 2rem 5rem;
+    padding: 6rem 5rem 2rem 5rem;
 }
+
 nav {
-    /* width: 90%; */
-    margin: auto;
+    margin: 0;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: red;
+    position: fixed;
+    left: 0;
+    padding: 1rem 5rem;
+    z-index: 1000;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    transition: background 0.3s ease;
 }
 
-a {
-    text-decoration: none;   
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
 }
 
-li {
-    list-style: none;
-    display: inline-block;
-}
-
-nav div h1 {
-    font-weight: 800;
+nav ul {
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
-    margin-left: 1rem;
+    list-style: none;
 }
 
 nav ul li a {
     color: #fff;
     font-weight: 600;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
 }
 
 nav ul li a:hover {
     color: red;
-    transition: .5s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 
-/* header content */
 .header-content {
     color: #ffffff;
-    width: 50%;
+    width: 80%;
     position: relative;
-    top: 23rem;
+    top: 2rem;
 }
 
 .header-content h1 {
     font-weight: 800;
     color: rgb(190, 47, 47);
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
 }
 
 .header-content p {
     color: whitesmoke;
     margin-bottom: 2rem;
     font-size: 1.5rem;
-}
-
-input[type=text] {
-    padding: 1.5rem;
     width: 50%;
-    display: block;
-    margin-bottom: .5rem;
-    outline: none;
 }
 
-input[type=text]::placeholder {
+html {
+    scroll-behavior: smooth;
+}
+
+.Home,
+.About,
+.Team {
+    height: 100vh;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 4rem;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.About {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.our-team-container {
+    min-height: 100vh;
+    /* or adjust based on content */
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.service {
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid red;
+    padding: 2rem;
+    max-width: 350px;
+    text-align: center;
+    margin-bottom: 2rem;
+    height: auto;
+}
+
+.service img {
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.service h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: rgb(190, 47, 47);
+}
+.contact-page {
+    height: 60vh;
+    padding: 20px;
+}
+.contact-form {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 3rem;
+    max-width: 600px;
+    margin: 2rem auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.contact-form input[type="email"] {
+    padding: 1rem;
+    border: 2px solid rgb(190, 47, 47);
+    border-radius: 8px;
     font-size: 1rem;
 }
 
-form button {
-    background-color: rgb(190, 47, 47);;
-    color: #fff;
-    padding: 1.5rem 7rem;
-    font-size: 1.5rem;
-    font-weight: bold;
-    border-radius: .5rem;
-    border: none;
-}
-
-form button:hover {
-    /* border: 1px solid rgb(190, 47, 47); */
-    background-color: #fff;
-    color: rgb(190, 47, 47);
+.contact-button {
+    background-color: rgb(190, 47, 47);
+    color: white;
+    border: 2px solid rgb(190, 47, 47);
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
+.contact-button:hover {
+    background-color: white;
+    color: rgb(190, 47, 47);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: rgb(190, 47, 47);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}

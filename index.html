@@ -1,33 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
+
 <body>
-    <header>
+    <header class="Home" id="Home">
         <nav>
-            <div>
+            <div class="logo">
+                <img src="./images/farmer.png" alt="logo" height="40">
                 <h1>Peter's Farm</h1>
             </div>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#Team">Team</a></li>
+                <li><a href="#Contact">Contact</a></li>
             </ul>
         </nav>
         <div class="header-content">
-            <h1>Ukulima Ndo Ngazo Yetu</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit sunt veniam id iste neque consequatur doloremque voluptate quis perspiciatis, ea molestias ex accusamus dignissimos fugiat rerum illo culpa similique eligendi?</p>
-            <form>
-                <input type="text" placeholder="Enter your name">
-                <button>Subscribe</button>
+            <h1>Ukulima ni Msingi wa Maisha Yetu</h1>
+            <p>
+                Discover a new way to manage and enhance your farming operations. This app is designed to support
+                farmers by
+                providing
+                easy access to key tools and resources that improve efficiency, productivity, and decision-making. From
+                tracking
+                crops
+                and livestock to streamlining day-to-day tasks, this app is built with the unique needs of the farming
+                community
+                in
+                mind. Simplify your workflow and stay connected to your farm, no matter where you are.
+            </p>
+            <form class="header-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
             </form>
         </div>
     </header>
-    <a href="">Read more</a>
+    <section class="About" id="About">
+        <h1>About Us</h1>
+        <h2>Our Mission & Vision</h2>
+        <p><strong>Mission:</strong> To empower farmers with sustainable solutions for a better tomorrow.</p>
+        <p><strong>Vision:</strong> A world where every farmer thrives with eco-friendly practices.</p>
+        <div class="gallery">
+            <img src="https://images.nationalgeographic.org/image/upload/t_edhub_resource_key_image/v1638892233/EducationHub/photos/crops-growing-in-thailand.jpg"
+                alt="farm" height="300">
+            <img src="./images/animal.jpg" alt="farm" height="300">
+        </div>
+    </section>
+    <section class="Services" id="Services">
+        <h1>Our Services</h1>
+        <div class="services-container">
+            <div class="service">
+                <img src="https://www.analyticssteps.com/backend/media/thumbnail/6006173/6278986_1571298721_Weather_Forecoast_Graphics.jpg"
+                    alt="Service 1" height="200">
+                <h2>Crop Management</h2>
+                <p>Stay ahead of the weather with our accurate and timely forecasts tailored for farmers.</p>
+            </div>
+            <div class="service">
+                <img src="https://green.org/wp-content/uploads/2024/01/R-2-67.jpg" alt="Service 2" height="200">
+                <h2>Livestock Tracking</h2>
+                <p>Keep track of your livestock with our easy-to-use tracking system.</p>
+            </div>
+            <div class="service">
+                <img src="https://www.aimtechnologies.co/wp-content/uploads/2023/09/Consumer-Insights-and-Market-Research.png"
+                    alt="Service 3" height="200">
+                <h2>Market Insights</h2>
+                <p>Get the latest market trends and insights to make informed decisions.</p>
+            </div>
+            <div class="service">
+                <img src="https://www.gz-supplies.com/product_images/uploaded_images/agriculture-insecticide-sprayer-machine-vision.jpg"
+                    alt="Service 4" height="200">
+                <h2>Equipment Rentals</h2>
+                <p>Rent the latest farming equipment to enhance your productivity.</p>
+            </div>
+            <div class="service">
+                <img src="https://businessconsultingagency.com/wp-content/uploads/2023/09/impact-of-consulting-services-916x458.jpg"
+                    alt="Service 5" height="200">
+                <h2>Consulting Services</h2>
+                <p>Get expert advice and consulting services to improve your farming practices.</p>
+            </div>
+            <div class="service">
+                <img src="https://5076401c.delivery.rocketcdn.me/wp-content/uploads/Soil-Testing-Kit-Range-1.png"
+                    alt="Service 6" height="200">
+                <h2>Soil Testing</h2>
+                <p>Analyze soil health and get recommendations for optimal crop growth.</p>
+            </div>
+        </div>
+    </section>
+    <section class="Contact" id="Contact">
+        <h1>Contact Us</h1>
+        <div class="contact-form">
+            <form>
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="contact-button">Subscribe</button>
+                <p>Stay updated with our latest news and offers.</p>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Peter's Farm</p>
+    </footer>
 </body>
+
 </html>
